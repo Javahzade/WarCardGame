@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WarCardGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awK-UC-MIp" userLabel="Deal ">
+                                <rect key="frame" x="157" y="367" width="81.666666666666686" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EVZ-vW-jSU"/>
+                                </constraints>
+                                <state key="normal" image="dealbutton">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="Deal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DWd-Y5-Xiq"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Erc-T7-tEi">
+                                <rect key="frame" x="48" y="20" width="299.66666666666669" height="67"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="Vft-Mv-0Bx">
+                                <rect key="frame" x="48" y="164" width="299.66666666666669" height="170"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="OhB-Tl-6VM">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="170"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="tZu-qg-hpJ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="p0E-Mc-VqD">
+                                        <rect key="frame" x="181" y="0.0" width="118.66666666666669" height="170"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YGU-xZ-wxW">
+                                <rect key="frame" x="47.999999999999993" y="425" width="83.333333333333314" height="140"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAb-8h-cTl">
+                                        <rect key="frame" x="0.0" y="0.0" width="83.333333333333329" height="35"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0u2-qk-Z0A">
+                                        <rect key="frame" x="0.0" y="35" width="83.333333333333329" height="105"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
+                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="d6L-ew-e6H">
+                                <rect key="frame" x="285" y="425" width="63" height="140"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9T-K1-lTh">
+                                        <rect key="frame" x="0.0" y="0.0" width="63" height="35"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvP-Aj-ges">
+                                        <rect key="frame" x="0.0" y="35" width="63" height="105"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
+                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D36-4B-eBP">
+                                <rect key="frame" x="153" y="630.33333333333337" width="89.666666666666686" height="90"/>
+                                <color key="tintColor" red="1" green="0.67196472648049088" blue="0.085919029007724856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="arrow.counterclockwise" catalog="system"/>
+                                <connections>
+                                    <action selector="restart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QZx-lz-9Rw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="AVP-aW-QLJ">
+                                <rect key="frame" x="107.99999999999999" y="573" width="179.66666666666663" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cL7-J6-jv9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lb4-mB-lnW">
+                                <rect key="frame" x="304" y="631" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="xmark.rectangle" catalog="system"/>
+                                <connections>
+                                    <action selector="close:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wwd-OP-gJg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.032201956398006" green="0.33020701142131981" blue="0.10019600214624136" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="D36-4B-eBP" secondAttribute="bottom" constant="14.666666666666629" id="7K8-aW-Idd"/>
+                            <constraint firstItem="Vft-Mv-0Bx" firstAttribute="leading" secondItem="YGU-xZ-wxW" secondAttribute="leading" id="81C-6w-VH2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d6L-ew-e6H" secondAttribute="trailing" constant="66" id="BVW-pg-Qn4"/>
+                            <constraint firstItem="AVP-aW-QLJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="C8B-an-JuZ"/>
+                            <constraint firstItem="Erc-T7-tEi" firstAttribute="centerX" secondItem="Vft-Mv-0Bx" secondAttribute="centerX" id="F8h-m2-fqD"/>
+                            <constraint firstItem="D36-4B-eBP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="153" id="FxG-JJ-Dui"/>
+                            <constraint firstItem="awK-UC-MIp" firstAttribute="top" secondItem="Vft-Mv-0Bx" secondAttribute="bottom" constant="33" id="I3g-kG-8zG"/>
+                            <constraint firstItem="AVP-aW-QLJ" firstAttribute="centerX" secondItem="D36-4B-eBP" secondAttribute="centerX" id="Maa-Pz-Exe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Erc-T7-tEi" secondAttribute="trailing" constant="66.333333333333314" id="Nl9-La-dgX"/>
+                            <constraint firstItem="YGU-xZ-wxW" firstAttribute="top" secondItem="d6L-ew-e6H" secondAttribute="top" id="Urd-Pz-TDR"/>
+                            <constraint firstItem="AVP-aW-QLJ" firstAttribute="top" secondItem="YGU-xZ-wxW" secondAttribute="bottom" constant="8" id="Veq-he-KAm"/>
+                            <constraint firstItem="Erc-T7-tEi" firstAttribute="leading" secondItem="Vft-Mv-0Bx" secondAttribute="leading" id="W9R-ZR-E3e"/>
+                            <constraint firstItem="Erc-T7-tEi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="Xgb-PX-9xW"/>
+                            <constraint firstItem="D36-4B-eBP" firstAttribute="top" secondItem="AVP-aW-QLJ" secondAttribute="bottom" constant="8" id="Zjg-Jz-Uq3"/>
+                            <constraint firstItem="Vft-Mv-0Bx" firstAttribute="centerX" secondItem="awK-UC-MIp" secondAttribute="centerX" id="cMk-IE-7t6"/>
+                            <constraint firstItem="awK-UC-MIp" firstAttribute="centerX" secondItem="AVP-aW-QLJ" secondAttribute="centerX" id="hdY-0e-8qN"/>
+                            <constraint firstItem="Erc-T7-tEi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="iqp-7N-pV7"/>
+                            <constraint firstItem="Vft-Mv-0Bx" firstAttribute="top" secondItem="Erc-T7-tEi" secondAttribute="bottom" constant="77" id="nMd-Xy-GDB"/>
+                            <constraint firstItem="YGU-xZ-wxW" firstAttribute="top" secondItem="Vft-Mv-0Bx" secondAttribute="bottom" constant="91" id="qOB-eg-jNF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dealStop" destination="awK-UC-MIp" id="aXs-cw-WSQ"/>
+                        <outlet property="gameScore" destination="AVP-aW-QLJ" id="025-6K-cYq"/>
+                        <outlet property="leftCard" destination="OhB-Tl-6VM" id="MBi-WL-Dwa"/>
+                        <outlet property="restartOut" destination="D36-4B-eBP" id="VTj-Eq-5Dd"/>
+                        <outlet property="rightCard" destination="p0E-Mc-VqD" id="f4h-OG-28m"/>
+                        <outlet property="scoreCPU" destination="EvP-Aj-ges" id="IEq-LD-qek"/>
+                        <outlet property="scorePlayer" destination="0u2-qk-Z0A" id="aPw-CS-pez"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="129.61956521739131"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.counterclockwise" catalog="system" width="56" height="64"/>
+        <image name="back" width="120" height="170"/>
+        <image name="dealbutton" width="81.666664123535156" height="31"/>
+        <image name="logo" width="122" height="67"/>
+        <image name="xmark.rectangle" catalog="system" width="64" height="46"/>
+    </resources>
+</document>
